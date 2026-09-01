@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gboard_bg">#1E1F22</color>
+    <color name="gboard_key_bg">#2D2F31</color>
+    <color name="gboard_key_text">#FFFFFF</color>
+    <color name="gboard_enter_bg">#A8C7FA</color>
+    <color name="gboard_enter_text">#062E6F</color>
+    <color name="gboard_subtext">#8E918F</color>
+</resources>
