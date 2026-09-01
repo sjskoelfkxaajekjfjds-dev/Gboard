@@ -1,4 +1,6 @@
 package com.google.android.inputmethod.latin
+import com.google.android.inputmethod.latin.R
+
 
 import android.content.Intent
 import android.inputmethodservice.InputMethodService
