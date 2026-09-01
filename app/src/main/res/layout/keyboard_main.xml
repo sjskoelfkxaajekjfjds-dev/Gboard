@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gboard_bg"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <!-- شريط الأدوات العلوي -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <Button
+            android:id="@+id/btn_auto_type"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡ كتابة تلقائية"
+            android:textColor="@color/gboard_key_text"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_settings"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الإعدادات"
+            android:textColor="@color/gboard_subtext"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- لوحة الحروف -->
+    <LinearLayout
+        android:id="@+id/layout_letters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_switch_symbols"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:backgroundTint="@color/gboard_key_bg"
+                android:text="؟۱۲۳"
+                android:textColor="@color/gboard_key_text" />
+
+            <Button
+                android:id="@+id/btn_space"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:backgroundTint="@color/gboard_key_bg"
+                android:text="العربية"
+                android:textColor="@color/gboard_key_text" />
+
+            <Button
+                android:id="@+id/btn_backspace"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:backgroundTint="@color/gboard_key_bg"
+                android:text="حذف"
+                android:textColor="@color/gboard_key_text" />
+
+            <Button
+                android:id="@+id/btn_enter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:backgroundTint="@color/gboard_enter_bg"
+                android:text="إرسال"
+                android:textColor="@color/gboard_enter_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- لوحة الرموز والأرقام -->
+    <LinearLayout
+        android:id="@+id/layout_symbols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_switch_letters"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:backgroundTint="@color/gboard_key_bg"
+                android:text="أب‌ج"
+                android:textColor="@color/gboard_key_text" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="4" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
