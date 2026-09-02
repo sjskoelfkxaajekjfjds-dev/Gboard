@@ -7,6 +7,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
+        <!-- واجهة التحكم والتطبيق الرئيسي -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- خدمة الكيبورد -->
         <service
             android:name=".GboardService"
             android:label="Gboard Custom Keyboard"
