@@ -8,7 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.google.android.inputmethod.latin"
+        applicationId = "com.mygboard.custom.app"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
